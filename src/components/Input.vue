@@ -1,11 +1,10 @@
 <template>
-    <div v-if="title" class="input-field__title"> {{ title }} </div>
+    <label v-if="title" class="input-field__title"> {{ title }} </label>
     <input 
         :class="`input-field__${variant}`"  
         maxlength="60" 
         :name="content" 
         :id="content" 
-        v-model="text"
         :type="`${variant === 'textInput' ? 'text' : 'file'}`" 
         placeholder="Beschreibung"
     />
@@ -27,13 +26,6 @@ export default {
     title: String,
     placeholder: String,
   },
-    data() {
-        return { 
-        text: '',
-        }
-  },
-  methods: {
-  }
 }
 </script>
 

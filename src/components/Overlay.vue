@@ -86,7 +86,6 @@ export default {
             height: 32px;
             width: 5px;
             background-color: #3D5DE8;
-            width: 4.57px;
             border-radius: 20px;
         }
 
@@ -101,63 +100,11 @@ export default {
     }
 @media only screen and (min-width: 768px) {
     .overlay {
-      position: fixed;
-      height: 100%;
       width: 100%;
-      top: 0;
-      scroll-behavior: smooth;
-      animation-duration: 400ms;
-      animation-timing-function: ease-in-out;
-      animation-name: slidein;
-
-      &__header {
-        width: 100%;
-        height: 40px;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-      }
 
       &__content {
-        display: flex;
-        flex-direction: column;
         width: 678px;
         height: 760px;
-        background: #8897da;
-        border-radius: 24px;
-        padding: {
-          right: 40px;
-          bottom: 40px;
-          left: 40px;
-        }
-      }
-
-      &__close {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 25px;
-        width: 32px;
-        height: 32px;
-
-        &:before, &:after {
-          position: absolute;
-          left: 15px;
-          content: ' ';
-          height: 32px;
-          width: 5px;
-          background-color: #3D5DE8;
-          width: 4.57px;
-          border-radius: 20px;
-        }
-
-        &:before {
-          transform: rotate(45deg);
-        }
-
-        &:after {
-          transform: rotate(-45deg);
-        }
       }
     }
 }

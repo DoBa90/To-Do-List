@@ -19,26 +19,12 @@ export default {
     description: String,
     image: String,
   },
-  data(){
-    return {
-      checkedProducts:[]
-    }
-  },
   computed: {
       imageSource() {
         const noImage = require('../assets/noPhoto.jpeg')
         return this.image ? this.image : noImage
       }
   },
-  methods: {
-    deleteTasks() {
-      console.log("deletedtasks");
-      this.$emit("deletedtasks", this.checkedProducts);
-    },
-    openOverlay() {
-      this.$emit('activateOverlay', true )
-    }
-  }
 }
 </script>
 

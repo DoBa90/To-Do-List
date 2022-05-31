@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overview.vue renders variant "default" correctly 1`] = `
+<div class="overview">
+  <div class="overview__headline">Übersicht</div>
+  <tasks-stub text="" class="overview__tasks"></tasks-stub>
+</div>
+<!--v-if-->
+`;

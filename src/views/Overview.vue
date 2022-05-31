@@ -49,7 +49,6 @@ export default {
     },
 
     deleteSelectedTasks(tasks) {
-      console.log("deleteSelectedTasks", tasks)
       tasks.forEach(task => {
         const index = this.allTasks.indexOf(task)
 

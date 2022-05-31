@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tasks.vue renders variant "default" correctly 1`] = `
+<div class="tasks">
+  <div class="tasks__wrapper">
+    <button-stub text="" variant="roundButton" class="tasks__round-button"></button-stub>
+    <button-stub text="Löschen" variant="whiteButton" class="tasks__button"></button-stub>
+    <button-stub text="Erledigt" variant="blueButton" class="tasks__button"></button-stub>
+  </div>
+</div>
+`;
