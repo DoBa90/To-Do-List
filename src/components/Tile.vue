@@ -37,6 +37,7 @@ export default {
         height: 100%;
         background-color: white;
         border-radius: 16px;
+        overflow: hidden;
 
         &__item-pic {
             width: 100%;
@@ -92,11 +93,11 @@ export default {
         flex-direction: row;
 
         &__item-pic {
-            width: 30%;
+            width: 35%;
         }
 
         &__wrapper-text {
-            width: 70%;
+            width: 65%;
         }
 
         &__headline {
