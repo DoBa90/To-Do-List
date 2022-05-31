@@ -11,13 +11,6 @@ describe('Overview.vue', () => {
     const overview = mountComp();
 
     expect(overview.exists()).toBeTruthy();
-  // it('renders props.msg when passed', () => {
-  //   const msg = 'new message'
-  //   const wrapper = shallowMount(HelloWorld, {
-  //     props: { msg }
-  //   })
-  //   expect(wrapper.text()).toMatch(msg)
-  // })
   })
 
   it('renders variant "default" correctly', () => {
@@ -26,28 +19,3 @@ describe('Overview.vue', () => {
     expect(overview.html()).toMatchSnapshot();
 });
 })
-
-
-
-// import { createLocalVue, shallowMount } from '@vue/test-utils';
-// import NavigationBox from '@/components/NavigationBox/NavigationBox.vue';
-
-// const localVue = createLocalVue();
-
-// const mountComp = options => shallowMount(NavigationBox, {
-//     localVue,
-//     propsData: {
-//         headline: 'Hier alle Geräte ansehen und das richtige Produkt finden',
-//         url: 'https://kaufland.de/elektronik',
-//         href: 'https://kaufland.de/elektronik',
-//         ...options?.propsData
-//     },
-//     mocks: options?.mocks
-// });
-
-// describe('NavigationBox', () => {
-//     it('renders', () => {
-//         const navigationBox = mountComp();
-
-//         expect(navigationBox.exists()).toBeTruthy();
-//     })
