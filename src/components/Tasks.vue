@@ -74,27 +74,10 @@ export default {
 
 @media only screen and (min-width: 768px) {
 .tasks {
-    &__items {
-        color: #000000;
-        opacity: 1;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 8px;
-        padding-bottom: 20px;
-        width: 100%;
-    }
-
     &__wrapper {
-        display: grid;
         grid-template-columns: auto 140px 140px;
-        align-items: center;
         padding-left: 28px;
         justify-content: initial; 
-    }
-
-    &__button {
-        justify-self: end;
     }
 }  
 }
